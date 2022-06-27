@@ -3,4 +3,5 @@ import './tabs.js'
 
 import $ from 'jquery'
 
-$('.banner').css('background','tomato')
+import './styles/index.css'
+// $('.banner').css('background','tomato')
