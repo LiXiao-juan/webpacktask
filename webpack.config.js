@@ -30,7 +30,12 @@ module.exports = {
             // 先用 css-loader 让webpack能够识别 css 文件的内容并打包
             // 再用 style-loader 将样式, 把css插入到dom中
             use: [ "style-loader", "css-loader"]
-          }
+          },
+          {
+            test: /\.less$/,
+            // 使用less-loader, 让webpack处理less文件, 内置还会用less翻译less代码成css内容
+            use: [ "style-loader", "css-loader", 'less-loader']
+        }
         ]
     }
 }
