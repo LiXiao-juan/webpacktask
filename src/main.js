@@ -13,3 +13,12 @@ import imgUrl from './assets/1.gif'
 const theImg = document.createElement('img')
 theImg.src = imgUrl
 document.body.appendChild(theImg)
+
+class App {
+  static a = 123
+}
+const fn = () => {
+  console.log(123)
+}
+fn()
+console.log(App.a)
